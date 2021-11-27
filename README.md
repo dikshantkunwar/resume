@@ -44,7 +44,17 @@ My "native" programming language, I've worked with it for over 4 years. I've use
 
 Familiar with image processing techniques and OpenCV library to work on Python or Java. Also experienced with machine learning libraries like TensorFlow and Pandas 
 
-**Other: Git, Docker, SQL, Python, 3D modeling with Blender** 
+**Other: jQuery, Git, Docker, SQL, Python, 3D modeling with Blender** 
+
+---
+
+## 🐉 Projects
+
+### [Lotide](https://github.com/dikshantkunwar/lotide) 
+A mini clone of lodash library written in Javascript using Node and tests with Mocha. The project is published and available on [NPM](https://www.npmjs.com/package/@dikshantkunwar/lotide)
+
+### [Tweeter](https://github.com/dikshantkunwar/tweeter)
+Done as a part of web development fundamentals with Lighthouse labs - Tweeter is a clone of twitter with simple functionalities. Uses jQuery to serve client side javascript.
 
 ---
 
@@ -67,3 +77,9 @@ Fluent
 *2018* 
 
 Mahidol University International College - Salaya, Thailand
+
+## **Ligthouse Labs - Frontend with React**
+
+*2021*
+
+Completed a 12 week front end with react upskilling program with Lighthouse Labs and Invest Ottawa - ON, Canada
