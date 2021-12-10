@@ -1,11 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import profilePic from './profile.jpg'
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Navigation from './components/Navigation';
+import Skills from './components/Skills'
 
 function App() {
   return (
     <div className="App">
-      <h1>Dikshant Konwar Prasai</h1>
-      <span>Website coming soon...</span>
+      <Navigation pic={profilePic} />
+      <section> 
+        <Skills />
+        <Education />
+        <Experience />
+      </section>
     </div>
   );
 }
