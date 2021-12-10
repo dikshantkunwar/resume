@@ -1,85 +1,70 @@
-# Resume
+# Getting Started with Create React App
 
-> I'm a software engineer based in North Bay, Ontario with 3 years of experience in the software industry.
-> 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# ☎️ Contact information
+## Available Scripts
 
-📧 dikshantkunwar@gmail.com
+In the project directory, you can run:
 
-🔗 [LinkedIn](https://www.linkedin.com/in/dikshant-konwar-prasai-9b8a84123/)
+### `npm start`
 
-🉐 [Github](https://www.github.com/dikshantkunwar)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
----
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-# ⌨️ Work experience
+### `npm test`
 
-## Web developer
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-FDM4*, North Bay ON– (Jan 2019 - August 2021)*
+### `npm run build`
 
-- Worked in the R&D team to build features and take on bug tickets for the Web Architect module. Built responsive, ADA compliant website pages and components for customers and handled third party integrations like Google Tag Manager and Dot Digital.
-- Developed a multi step web decorations module which would interact with the database and create customer specific designs which can be decorated and added on apparels.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-  
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Web developer (Intern)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Clark Communications*, North Bay ON– (August 2018 - October 2018)*
+### `npm run eject`
 
-- Developed a prototype of a Ionic Angular mobile application for a customer which would serve as the landing page and then integrated their existing web features into the mobile app
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
----
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# 🛠 Skills
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## 💻 Technology
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### Javascript ⭐️⭐️⭐️⭐️
+## Learn More
 
-My "native" programming language, I've worked with it for over 4 years. I've used it in the front-end with React and Vue, in the back-end for APIs with Node, Express and for testing automation using Mocha and Chai. Familiar with ES6 syntax and functions.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Image processing & Machine learning⭐️⭐️
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Familiar with image processing techniques and OpenCV library to work on Python or Java. Also experienced with machine learning libraries like TensorFlow and Pandas 
+### Code Splitting
 
-**Other: jQuery, Git, Docker, SQL, Python, 3D modeling with Blender** 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
----
+### Analyzing the Bundle Size
 
-## 🐉 Projects
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### [Lotide](https://github.com/dikshantkunwar/lotide) 
-A mini clone of lodash library written in Javascript using Node and tests with Mocha. The project is published and available on [NPM](https://www.npmjs.com/package/@dikshantkunwar/lotide)
+### Making a Progressive Web App
 
-### [Tweeter](https://github.com/dikshantkunwar/tweeter)
-Done as a part of web development fundamentals with Lighthouse labs - Tweeter is a clone of twitter with simple functionalities. Uses jQuery to serve client side javascript.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
----
+### Advanced Configuration
 
-## 🗣 Languages
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Nepali🇳🇵
+### Deployment
 
-Native speaker
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### Hindi 🇮🇳, English 🇨🇦
+### `npm run build` fails to minify
 
-Fluent 
-
----
-
-# 📚 Education
-
-## **Bachelor's Degree in Computer Engineering**
-
-*2018* 
-
-Mahidol University International College - Salaya, Thailand
-
-## **Ligthouse Labs - Frontend with React**
-
-*2021*
-
-Completed a 12 week front end with react upskilling program with Lighthouse Labs and Invest Ottawa - ON, Canada
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
