@@ -1,6 +1,9 @@
 const Experience = () => {
   return(
-    <h1>Experience</h1>
+    <section>
+      <h1>Experience</h1>
+    </section>
+    
   )
 }
 
