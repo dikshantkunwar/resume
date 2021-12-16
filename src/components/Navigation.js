@@ -11,15 +11,20 @@ import {
   MenuButton,
   MenuList,
   IconButton,
-  useColorMode
+  useColorMode,
 } from '@chakra-ui/react'
 
 import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 
 import {
   BrowserRouter as Router,
-  Link
+  Link,
+  Routes,
+  Route
 } from 'react-router-dom'
+import Education from './Education';
+import Experience from './Experience';
+import Skills from './Skills';
 
 // const LinkItem = ({ href, path, _target, children, ...props }) => {
 //   const active = path === href
@@ -72,10 +77,16 @@ const Navigation = () => {
             mt={{ base: 4, md: 0}}
             float='right'
           >
-            <Router>
+            {/* <Router>
               <Link to='/#'>Projects</Link>
               <Link to='/#'>Resume</Link>
-            </Router>
+            </Router> */}
+
+            <Routes>
+              <Route path="/" component={<Skills />} exact />
+              <Route path="/about" component={<Education />} />
+              <Route path="/shop" component={<Experience />} />
+            </Routes>
             {/* <IconButton
               aria-label='Toggle theme'
               colorScheme={useColorModeValue('blackAlpha', 'pink')}
