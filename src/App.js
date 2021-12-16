@@ -6,23 +6,40 @@ import Navigation from './components/Navigation';
 import Skills from './components/Skills'
 import Footer from './components/Footer';
 
-import { Container, Flex } from '@chakra-ui/react'
+import { Box, Container,} from '@chakra-ui/react'
+import ArticleList from './components/ArticleList';
 
 
 function App() {
   return (
-    <div className="App">
-      <Navigation pic={profilePic} />
+    <Box as="main" pb={8}>
+      {/* TODO HEAD  */}
 
-      <Container maxWidth="container.sm" padding={0} bg="grey.50">
-        
-        <Flex h="100vh" py={20} flexDirection="column">
-          ABC
-        </Flex>
+      <Navigation />
+      
+      <Container maxW="container.md" pt={14}>
+        <Footer />
       </Container>
-      <Footer />
-    </div>
-  );
+    </Box>
+  )
+  
 }
 
 export default App;
+
+/*
+return (
+    <Container>
+      <Navigation pic={profilePic} />
+      
+      <Container 
+        maxWidth="container.sm" 
+        padding={0} 
+        bg="grey.50"
+        marginTop="1em">
+        <ArticleList />
+      </Container>
+      <Footer />
+    </Container>
+  );
+   */
