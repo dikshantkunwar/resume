@@ -5,10 +5,12 @@ import {
   Flex,
   Heading, 
   Stack,
+  Button,
   Menu,
   MenuButton,
   MenuList,
-  IconButton
+  IconButton,
+  useColorMode
 } from '@chakra-ui/react'
 
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -36,6 +38,8 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 }
 
 const Navigation = props => {
+  const { toggleColorMode } = useColorMode();
+  
   return (
     <Box
       position="fixed"
@@ -53,7 +57,7 @@ const Navigation = props => {
         align="center"
         justify="space-between"
         >
-          <Flex align="center" mr={5}>
+          <Flex align="center" mr={12}>
             <Heading as="h1" size="lg" letterSpacing={'tighter'}>
               Dikshant Konwar
             </Heading>
@@ -66,11 +70,13 @@ const Navigation = props => {
             alignItems="center"
             flexGrow={1}
             mt={{ base: 4, md: 0}}
+            float='right'
           >
-
-            <Box>Projects</Box>
-            <Box>Resume</Box>
-          
+            <Router>
+              <Link to='/#'>Projects</Link>
+              <Link to='/#'>Resume</Link>
+            </Router>
+            <Button onClick={toggleColorMode}> Toggle dark theme </Button>
           </Stack>
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -83,6 +89,10 @@ const Navigation = props => {
               />
               <MenuList>
                 {/* Add menu links here ... */}
+                <Router>
+                  <Link to='/#'>Projects</Link>
+                  <Link to='/#'>Resume</Link>
+                </Router>
               </MenuList>
             </Menu>
           </Box>
