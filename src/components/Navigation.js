@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { 
   Box,
   Container,
@@ -5,7 +7,6 @@ import {
   Flex,
   Heading, 
   Stack,
-  Button,
   Menu,
   MenuButton,
   MenuList,
@@ -17,27 +18,25 @@ import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from 'react-router-dom'
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-  return (
-    <Link
-      p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202023' : inactiveColor}
-      _target={_target}
-      >
-        {children}
-      </Link>
-  )
-}
+// const LinkItem = ({ href, path, _target, children, ...props }) => {
+//   const active = path === href
+//   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+//   return (
+//     <Link
+//       p={2}
+//       bg={active ? 'grassTeal' : undefined}
+//       color={active ? '#202023' : inactiveColor}
+//       _target={_target}
+//       >
+//         {children}
+//       </Link>
+//   )
+// }
 
-const Navigation = props => {
+const Navigation = () => {
   const { toggleColorMode } = useColorMode();
 
   return (
@@ -77,13 +76,20 @@ const Navigation = props => {
               <Link to='/#'>Projects</Link>
               <Link to='/#'>Resume</Link>
             </Router>
-            <IconButton
-            aria-label='Toggle theme'
-            colorScheme={useColorModeValue('blackAlpha', 'pink')}
-            icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-            onClick={toggleColorMode}
-            ></IconButton>
+            {/* <IconButton
+              aria-label='Toggle theme'
+              colorScheme={useColorModeValue('blackAlpha', 'pink')}
+              icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+              onClick={toggleColorMode}
+             ></IconButton> */}
           </Stack>
+
+          <IconButton
+              aria-label='Toggle theme'
+              colorScheme={useColorModeValue('blackAlpha', 'pink')}
+              icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+              onClick={toggleColorMode}
+             ></IconButton>
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">

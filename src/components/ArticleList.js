@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, Container, Heading, Image, Link } from "@chakra-ui/react";
 
 const ArticleList = () => {

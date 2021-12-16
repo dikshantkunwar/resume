@@ -1,13 +1,11 @@
+import React from 'react';
 import './App.css';
-import profilePic from './profile.jpg'
-import Education from './components/Education';
-import Experience from './components/Experience';
+// import profilePic from './profile.jpg'
 import Navigation from './components/Navigation';
-import Skills from './components/Skills'
 import Footer from './components/Footer';
 
 import { Box, Container,} from '@chakra-ui/react'
-import ArticleList from './components/ArticleList';
+// import ArticleList from './components/ArticleList';
 
 
 function App() {
@@ -27,19 +25,3 @@ function App() {
 
 export default App;
 
-/*
-return (
-    <Container>
-      <Navigation pic={profilePic} />
-      
-      <Container 
-        maxWidth="container.sm" 
-        padding={0} 
-        bg="grey.50"
-        marginTop="1em">
-        <ArticleList />
-      </Container>
-      <Footer />
-    </Container>
-  );
-   */
