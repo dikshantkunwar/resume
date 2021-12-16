@@ -4,6 +4,7 @@ import Education from './components/Education';
 import Experience from './components/Experience';
 import Navigation from './components/Navigation';
 import Skills from './components/Skills'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Education />
         <Experience />
       </section>
+      <Footer />
     </div>
   );
 }
