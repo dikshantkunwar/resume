@@ -13,7 +13,7 @@ import {
   useColorMode
 } from '@chakra-ui/react'
 
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 
 import {
   BrowserRouter as Router,
@@ -39,7 +39,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 
 const Navigation = props => {
   const { toggleColorMode } = useColorMode();
-  
+
   return (
     <Box
       position="fixed"
@@ -52,7 +52,7 @@ const Navigation = props => {
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
+        maxW="container.lg"
         wrap="wrap"
         align="center"
         justify="space-between"
@@ -68,6 +68,7 @@ const Navigation = props => {
             display={{ base: 'none', md: 'flex' }}
             width={{ base: 'full', md: 'auto'}}
             alignItems="center"
+            justifyContent="flex-end"
             flexGrow={1}
             mt={{ base: 4, md: 0}}
             float='right'
@@ -76,7 +77,12 @@ const Navigation = props => {
               <Link to='/#'>Projects</Link>
               <Link to='/#'>Resume</Link>
             </Router>
-            <Button onClick={toggleColorMode}> Toggle dark theme </Button>
+            <IconButton
+            aria-label='Toggle theme'
+            colorScheme={useColorModeValue('blackAlpha', 'pink')}
+            icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+            onClick={toggleColorMode}
+            ></IconButton>
           </Stack>
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
