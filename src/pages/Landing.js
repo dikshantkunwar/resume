@@ -8,14 +8,13 @@ import profileImage from '../profile.jpg'
 export default function Landing() {
   return (
     <LandingLayout>
-      {/* <About /> */}
       <Hero
         title="Hello world, I'm a software developer based in North Bay, ON!"
         subtitle="This is subheader section"
         image={profileImage}
-        //image="https://source.unsplash.com/collection/404339/800x600"
-        ctaText="Create account homes"
+        ctaText="This where social buttons go"
         />
+        
         <ContactForm />
         <Footer />
     </LandingLayout>

@@ -2,7 +2,6 @@ import
 { Flex,
   Heading,
   Stack,
-  Button,
   Text,
   Box,
   Image } from "@chakra-ui/react";
@@ -53,16 +52,7 @@ export default function Hero({
             >
               {subtitle}
             </Heading>
-            <Button
-              colorScheme="primary"
-              borderRadius="8px"
-              py="4"
-              px="4"
-              lineHeight="1"
-              size="md"
-            >
-              {ctaText}
-            </Button>
+
             <Text
               fontSize="xs"
               mt={2}
@@ -70,7 +60,7 @@ export default function Hero({
               color="primary.800"
               opacity="0.6"
             >
-              No credit card required.
+              {ctaText}
             </Text>
         </Stack>
         <Box w={{ base: "30%", sm: "30%", md: "30%" }} mb={{ base: 12, md: 0 }} mt={{ base: 30, md: 0}}>

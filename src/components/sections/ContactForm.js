@@ -26,7 +26,7 @@ export default function ContactForm() {
   }
 
   return (
-    <Flex w="full" align="center" justifyContent="center">
+    <Flex w="full" align="center" justifyContent="center" mb="20px">
       <Box p={8} w={{base: "60%", md: "60%", sm: "80%"}} maxWidth="800px" borderWidth={1} borderRadius={8} boxShadow="lg">
         <Box textAlign="center">
           <Heading>Contact me</Heading>
