@@ -25,7 +25,7 @@ export default function Hero({
       wrap="no-wrap"
       minH="70vh"
       px={8}
-      mb={16}
+      mb={5}
       {...rest}
       >
         <Stack

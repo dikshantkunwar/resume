@@ -32,7 +32,6 @@ const MenuItems = (props) => {
     </Text>
   )
 }
-//const Header = () => {
 export default function Header(){
   const { toggleColorMode } = useColorMode();
 
@@ -98,8 +97,6 @@ export default function Header(){
     </Box>
   )
 }
-
-//export default Header;
 
 Header.propTypes = {
   children: PropTypes.any,
