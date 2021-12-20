@@ -30,7 +30,7 @@ export default function Hero({
       >
         <Stack
           spacing={4}
-          w={{ base: "80%", md: "40%" }}
+          w={{ base: "80%", md: "60%" }}
           align={["center", "center", "flex-start", "flex-start"]}
         >
           <Heading
@@ -73,8 +73,8 @@ export default function Hero({
               No credit card required.
             </Text>
         </Stack>
-        <Box w={{ base: "80%", sm: "60%", md: "50%" }} mb={{ base: 12, md: 0 }}>
-          <Image src={image} size="100%" rounded="1rem" shadow="2xl" />
+        <Box w={{ base: "30%", sm: "30%", md: "30%" }} mb={{ base: 12, md: 0 }} mt={{ base: 30, md: 0}}>
+          <Image src={image} size="50%" rounded="1rem" shadow="2xl" />
         </Box>
       </Flex>
   )
