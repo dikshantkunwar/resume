@@ -72,13 +72,6 @@ export default function Header(){
             <MenuItems>Home</MenuItems>
             <MenuItems>How it works</MenuItems>
             <MenuItems>Contact me</MenuItems>
-
-            {/* <IconButton
-              aria-label='Toggle theme'
-              colorScheme={useColorModeValue('blackAlpha', 'pink')}
-              icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-              onClick={toggleColorMode}
-             ></IconButton> */}
           </Stack>
 
           <IconButton
@@ -98,10 +91,6 @@ export default function Header(){
               />
               <MenuList>
                 {/* Add menu links here ... */}
-                {/* <Router>
-                  <Link to='/#'>Projects</Link>
-                  <Link to='/#'>Resume</Link>
-                </Router> */}
               </MenuList>
             </Menu>
           </Box>

@@ -8,20 +8,4 @@ export default function App() {
   )
 }
 
-// function App() {
-//   return (
-//     <Box as="main" pb={8}>
-//       {/* TODO HEAD  */}
-
-//       <Navigation />
-      
-//       <Container maxW="container.md" pt={14}>
-//         <Footer />
-//       </Container>
-//     </Box>
-//   )
-  
-// }
-
-// export default App;
 
