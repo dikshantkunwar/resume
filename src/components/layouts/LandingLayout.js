@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import React from "react";
-import Footer from "../sections/Footer";
 import Header from "../sections/Header";
+import PropTypes from "prop-types"
 
 export default function LandingLayout(props) {
   return (
@@ -14,7 +14,10 @@ export default function LandingLayout(props) {
       >
         <Header />
         { props.children }
-        <Footer />
       </Flex>
   )
+}
+
+LandingLayout.propTypes = {
+  children: PropTypes.any
 }

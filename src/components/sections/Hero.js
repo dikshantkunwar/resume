@@ -1,11 +1,19 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import 
+{ Flex,
+  Heading,
+  Stack,
+  Button,
+  Text,
+  Box,
+  Image } from "@chakra-ui/react";
+
 import React from "react";
+import PropTypes from "prop-types"
 
 export default function Hero({
   title,
   subtitle,
   image,
-  ctaLink,
   ctaText,
   ...rest
 }) {
@@ -77,7 +85,6 @@ Hero.propTypes = {
   subtitle: PropTypes.string,
   image: PropTypes.string,
   ctaText: PropTypes.string,
-  ctaLink: PropTypes.string,
 }
  
 Hero.defaultProps = {
@@ -86,5 +93,4 @@ Hero.defaultProps = {
     "This is the subheader section where you describe the basic benefits of your product",
   image: "https://source.unsplash.com/collection/404339/800x600",
   ctaText: "Create your account now",
-  ctaLink: "/signup",
 }

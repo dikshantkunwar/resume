@@ -16,9 +16,11 @@ import {
 } from '@chakra-ui/react'
 
 import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
+import PropTypes from "prop-types";
 
 const MenuItems = (props) => {
-  const { children, isLast, ...rest} = props;
+  const { children, isLast, ...rest } = props;
+  console.log(children, isLast);
   return (
     <Text
       mb={{ base: isLast ? 0 : 8, sm: 0 }}
@@ -27,10 +29,11 @@ const MenuItems = (props) => {
       {...rest}
       >
 
-      </Text>
+    </Text>
   )
 }
-const Header = () => {
+//const Header = () => {
+export default function Header(){
   const { toggleColorMode } = useColorMode();
 
   return (
@@ -105,6 +108,16 @@ const Header = () => {
         </Container>
     </Box>
   )
+}
+
+//export default Header;
+
+Header.propTypes = {
+  children: PropTypes.any,
+  isLast: PropTypes.any
 };
 
-export default Header;
+MenuItems.propTypes = {
+  children: PropTypes.any,
+  isLast: PropTypes.any
+};
