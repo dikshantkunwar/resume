@@ -20,11 +20,14 @@ export default function ContactForm() {
     event.preventDefault();
     console.log(`name: ${contactName}, email: ${email}, message: ${message}`);
     //TODO where does this message go
+    setcontactName('');
+    setEmail('')
+    setMessage('')
   }
 
   return (
     <Flex w="full" align="center" justifyContent="center">
-      <Box p={8} maxWidth="800px" borderWidth={1} borderRadius={8} boxShadow="lg">
+      <Box p={8} w={{base: "60%", md: "60%", sm: "80%"}} maxWidth="800px" borderWidth={1} borderRadius={8} boxShadow="lg">
         <Box textAlign="center">
           <Heading>Contact me</Heading>
         </Box>
@@ -51,7 +54,7 @@ export default function ContactForm() {
                 placeholder='Your message here' 
                 onChange={event => setMessage(event.currentTarget.value)}/>
             </FormControl>
-            <Button width="full" mt={4} type="submit" variantColor="teal">Submit</Button>
+            <Button width="full" mt={4} type="submit" variantcolor="teal">Submit</Button>
           </form>
         </Box>
       </Box>

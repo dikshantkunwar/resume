@@ -2,7 +2,7 @@ import React from 'react';
 import LandingLayout from '../components/layouts/LandingLayout';
 import ContactForm from '../components/sections/ContactForm';
 import Hero from '../components/sections/Hero';
-// import About from '../components/sections/About';
+import Footer from '../components/sections/Footer'
 import profileImage from '../profile.jpg'
 
 export default function Landing() {
@@ -17,6 +17,7 @@ export default function Landing() {
         ctaText="Create account homes"
         />
         <ContactForm />
+        <Footer />
     </LandingLayout>
   )
 }
