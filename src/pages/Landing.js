@@ -13,6 +13,7 @@ export default function Landing() {
         title="Hello world, I'm a software developer based in North Bay, ON"
         subtitle="I love designing, building websites and strive for clean code. When I'm not coding I watch movies, listen to music and play chess :)"
         image={absurdImg}
+        mt={10}
         />
         <ProjectList />
         <ContactForm />
