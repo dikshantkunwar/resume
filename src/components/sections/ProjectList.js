@@ -2,6 +2,10 @@ import React from 'react'
 import { Flex } from '@chakra-ui/react'
 import Project from './Project'
 
+// import lotideThumb from '../../../public/projects/lotide.png'
+import tweeterThumb from '../../projects-images/tweeter.jpg'
+// import schedulerThumb from '../../../public/projects/scheduler.png'
+
 export default function ProjectList() {
   return (
 
@@ -14,26 +18,23 @@ export default function ProjectList() {
       <Project 
         title="Lotide"
         description="Lotide - clone of lodash"
-        date = "10/10/2021"
-        gitlink = "github link here/dikshantkunwar"
+        gitlink = "https://github.com/dikshantkunwar/lotide"
         livepage = ""
-        image = ""
+        image = {tweeterThumb}
         />
         <Project 
         title="Tweeter"
         description="Tweeter - clone of twitter"
-        date = "10/10/2021"
-        gitlink = "github link here/dikshantkunwar"
+        gitlink = "https://github.com/dikshantkunwar/tweeter"
         livepage = ""
-        image = ""
+        image = {tweeterThumb}
         />
         <Project 
         title="Scheduler"
         description="Schedule appointments"
-        date = "10/10/2021"
-        gitlink = "github link here/dikshantkunwar"
+        gitlink = "https://github.com/dikshantkunwar/scheduler"
         livepage = ""
-        image = ""
+        image = {tweeterThumb}
         />
     </Flex>
   )
