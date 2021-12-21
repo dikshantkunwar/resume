@@ -43,13 +43,15 @@ import Skills from './Skills';
 
 const Navigation = () => {
   const { toggleColorMode } = useColorMode();
+  const bgColor = useColorModeValue('red.50', 'whiteAlpha.50')
 
   return (
     <Box
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#fafade', '#20202380')}
+      //bg={useColorModeValue('#203866', 'pink')}
+      bg={bgColor}
       css = {{ backdropFilter: 'blur(10px)'}}
       zIndex={1}
     >
@@ -87,12 +89,6 @@ const Navigation = () => {
               <Route path="/about" component={<Education />} />
               <Route path="/shop" component={<Experience />} />
             </Routes>
-            {/* <IconButton
-              aria-label='Toggle theme'
-              colorScheme={useColorModeValue('blackAlpha', 'pink')}
-              icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-              onClick={toggleColorMode}
-             ></IconButton> */}
           </Stack>
 
           <IconButton

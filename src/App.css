@@ -4,25 +4,7 @@
 
 .App {
   text-align: center;
-  /* display: flex;
-  flex-direction: row;
-  height: 100%; */
 }
-
-/* Navigation - NEW */
-
-
-/* Navigation - OLD 
-.nav {
-  background-color: #121212;
-  font-family: 'Source Serif Pro', serif;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-*/
 
 .nav img {
   border-radius: 30px;
