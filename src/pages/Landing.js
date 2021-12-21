@@ -3,7 +3,6 @@ import LandingLayout from '../components/layouts/LandingLayout';
 import ContactForm from '../components/sections/ContactForm';
 import Hero from '../components/sections/Hero';
 import Footer from '../components/sections/Footer'
-// import profileImage from '../profile.jpg'
 import absurdImg from '../03.png'
 import ProjectList from '../components/sections/ProjectList';
 
@@ -11,8 +10,8 @@ export default function Landing() {
   return (
     <LandingLayout>
       <Hero
-        title="Hello world, I'm a software developer based in North Bay, ON!"
-        subtitle="This is subheader section"
+        title="Hello world, I'm a software developer based in North Bay, ON"
+        subtitle="I love designing, building websites and strive for clean code. When I'm not coding I watch movies, listen to music and play chess :)"
         image={absurdImg}
         />
         <ProjectList />

@@ -12,7 +12,7 @@ export default function SocialLinks() {
             colorScheme="purple"
             leftIcon={<Icon as={IoLogoGithub} />}
             >
-              @dikshantkunwar
+              dikshantkunwar
             </Button>
         </Link>
       </ListItem>
@@ -23,7 +23,7 @@ export default function SocialLinks() {
             colorScheme="purple"
             leftIcon={<Icon as={IoLogoInstagram} />}
             >
-              @dkshynt
+              dkshynt
             </Button>
         </Link>
       </ListItem>
