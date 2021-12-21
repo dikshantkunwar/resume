@@ -17,14 +17,14 @@ export default function ProjectList() {
       >
       <Project 
         title="Lotide"
-        description="Lotide - clone of lodash"
+        description="Lotide - JS utility library, clone of lodash"
         gitlink = "https://github.com/dikshantkunwar/lotide"
         livepage = ""
         image = {lotideThumb}
         />
         <Project 
         title="Tweeter"
-        description="Tweeter - clone of twitter"
+        description="Tweeter - basic twitter like UI to load "
         gitlink = "https://github.com/dikshantkunwar/tweeter"
         livepage = ""
         image = {tweeterThumb}
