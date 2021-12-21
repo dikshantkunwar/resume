@@ -2,18 +2,17 @@ import
 { Flex,
   Heading,
   Stack,
-  Text,
   Box,
   Image } from "@chakra-ui/react";
 
 import React from "react";
 import PropTypes from "prop-types"
+import SocialLinks from "./SocialLinks";
 
 export default function Hero({
   title,
   subtitle,
   image,
-  ctaText,
   ...rest
 }) {
   return (
@@ -53,15 +52,7 @@ export default function Hero({
               {subtitle}
             </Heading>
 
-            <Text
-              fontSize="xs"
-              mt={2}
-              textAlign="center"
-              color="primary.800"
-              opacity="0.6"
-            >
-              {ctaText}
-            </Text>
+            <SocialLinks />
         </Stack>
         <Box w={{ base: "30%", sm: "30%", md: "30%" }} mb={{ base: 12, md: 0 }} mt={{ base: 30, md: 0}}>
           <Image src={image} size="50%" rounded="1rem"  />
@@ -74,7 +65,6 @@ Hero.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   image: PropTypes.string,
-  ctaText: PropTypes.string,
 }
  
 Hero.defaultProps = {
@@ -82,5 +72,4 @@ Hero.defaultProps = {
   subtitle:
     "This is the subheader section where you describe the basic benefits of your product",
   image: "https://source.unsplash.com/collection/404339/800x600",
-  ctaText: "Create your account now",
 }

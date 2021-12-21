@@ -14,7 +14,6 @@ export default function Landing() {
         title="Hello world, I'm a software developer based in North Bay, ON!"
         subtitle="This is subheader section"
         image={absurdImg}
-        ctaText="This where social buttons go"
         />
         <ProjectList />
         <ContactForm />
