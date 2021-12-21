@@ -36,17 +36,6 @@ export default function Project({
           <Text fontSize={12}>{description}</Text>
         </LinkBox>
 
-        {/* <Heading  
-          as="span"
-          size="sm"
-          >{description}</Heading>
-
-        
-
-        
-        <Link href={gitlink}><Icon as={IoLogoGithub} /></Link>
-        <Link>{livepage}</Link> */}
-
     </Stack>
   )
 }

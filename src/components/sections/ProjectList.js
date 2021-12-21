@@ -2,9 +2,9 @@ import React from 'react'
 import { Flex } from '@chakra-ui/react'
 import Project from './Project'
 
-// import lotideThumb from '../../../public/projects/lotide.png'
 import tweeterThumb from '../../projects-images/tweeter.jpg'
-// import schedulerThumb from '../../../public/projects/scheduler.png'
+import schedulerThumb from '../../projects-images/scheduler.jpg'
+import lotideThumb from '../../projects-images/lotide.jpg'
 
 export default function ProjectList() {
   return (
@@ -20,7 +20,7 @@ export default function ProjectList() {
         description="Lotide - clone of lodash"
         gitlink = "https://github.com/dikshantkunwar/lotide"
         livepage = ""
-        image = {tweeterThumb}
+        image = {lotideThumb}
         />
         <Project 
         title="Tweeter"
@@ -31,10 +31,10 @@ export default function ProjectList() {
         />
         <Project 
         title="Scheduler"
-        description="Schedule appointments"
+        description="Schedule appointments (WIP 🔨)"
         gitlink = "https://github.com/dikshantkunwar/scheduler"
         livepage = ""
-        image = {tweeterThumb}
+        image = {schedulerThumb}
         />
     </Flex>
   )
