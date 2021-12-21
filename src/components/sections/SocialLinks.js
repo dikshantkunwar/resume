@@ -1,5 +1,5 @@
 import { Button, Icon, Link, List, ListItem } from '@chakra-ui/react'
-import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import React from 'react'
 
 export default function SocialLinks() {
@@ -24,6 +24,17 @@ export default function SocialLinks() {
             leftIcon={<Icon as={IoLogoInstagram} />}
             >
               dkshynt
+            </Button>
+        </Link>
+      </ListItem>
+      <ListItem>
+        <Link href="https://www.linkedin.com/in/dikshant-konwar-prasai/" target="_blank">
+          <Button
+            variant="ghost"
+            colorScheme="purple"
+            leftIcon={<Icon as={IoLogoLinkedin} />}
+            >
+              dikshant-konwar-prasai
             </Button>
         </Link>
       </ListItem>
