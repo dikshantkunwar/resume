@@ -4,6 +4,7 @@ import ContactForm from '../components/sections/ContactForm';
 import Hero from '../components/sections/Hero';
 import Footer from '../components/sections/Footer'
 import profileImage from '../profile.jpg'
+import ProjectList from '../components/sections/ProjectList';
 
 export default function Landing() {
   return (
@@ -14,7 +15,7 @@ export default function Landing() {
         image={profileImage}
         ctaText="This where social buttons go"
         />
-        
+        <ProjectList />
         <ContactForm />
         <Footer />
     </LandingLayout>

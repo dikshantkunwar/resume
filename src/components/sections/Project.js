@@ -1,4 +1,4 @@
-import { Heading, Link, Stack } from '@chakra-ui/react'
+import { Heading, Link, Stack, Image } from '@chakra-ui/react'
 import React from 'react'
 import PropTypes from "prop-types"
 
@@ -16,13 +16,15 @@ export default function Project({
     <Stack
       borderWidth={1}
       borderRadius={8}
-      boxShadow={lg}>
+      boxShadow="lg"
+      {...rest} 
+      >
         <Heading 
           as="h2"
           size="md"
           fontWeight="bold"
           color="primary.800"
-          >{title}</Heading>
+          >{title} {date}</Heading>
 
         <Heading  
           as="span"
@@ -30,8 +32,8 @@ export default function Project({
           >{description}</Heading>
 
         <Image src={image} />
-        <Link>gitlink</Link>
-        <Link>livepage</Link>
+        <Link>{gitlink}</Link>
+        <Link>{livepage}</Link>
 
     </Stack>
   )
