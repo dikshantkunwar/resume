@@ -17,6 +17,8 @@ export default function Project({
       borderWidth={1}
       borderRadius={8}
       boxShadow="lg"
+      p={5}
+      m={5}
       {...rest} 
       >
         <Heading 

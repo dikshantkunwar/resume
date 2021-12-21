@@ -6,7 +6,9 @@ export default function ProjectList() {
   return (
 
     <Flex 
-      justifyContent="center"
+      align="center"
+      justify={{ base: "center", md: "space-around", xl: "space-between" }}
+      direction={{ base: "column-reverse", md: "row" }}
       mb="60px"
       >
       <Project 
