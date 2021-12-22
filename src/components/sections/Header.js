@@ -6,7 +6,6 @@ import {
   useColorModeValue,
   Flex,
   Heading, 
-  Stack,
   Menu,
   MenuButton,
   MenuList,
@@ -19,8 +18,7 @@ import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 import PropTypes from "prop-types";
 
 const MenuItems = (props) => {
-  const { children, isLast, ...rest } = props;
-  console.log(children, isLast);
+  const { isLast, ...rest } = props;
   return (
     <Text
       mb={{ base: isLast ? 0 : 8, sm: 0 }}
@@ -58,7 +56,7 @@ export default function Header(){
             </Heading>
           </Flex>
 
-          <Stack
+          {/* <Stack
             direction={{ base: 'column', md: 'row' }}
             display={{ base: 'none', md: 'flex' }}
             width={{ base: 'full', md: 'auto'}}
@@ -71,7 +69,7 @@ export default function Header(){
             <MenuItems>Home</MenuItems>
             <MenuItems>How it works</MenuItems>
             <MenuItems>Contact me</MenuItems>
-          </Stack>
+          </Stack> */}
 
           <IconButton
               aria-label='Toggle theme'

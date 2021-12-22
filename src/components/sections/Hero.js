@@ -3,7 +3,9 @@ import
   Heading,
   Stack,
   Box,
-  Image } from "@chakra-ui/react";
+  Image,
+  useColorModeValue
+ } from "@chakra-ui/react";
 
 import React from "react";
 import PropTypes from "prop-types"
@@ -54,7 +56,11 @@ export default function Hero({
 
             <SocialLinks />
         </Stack>
-        <Box w={{ base: "30%", sm: "30%", md: "30%" }} mb={{ base: 12, md: 0 }} mt={{ base: 30, md: 0}}>
+        <Box 
+          bg={useColorModeValue('none', 'beige')}
+          w={{ base: "30%", sm: "30%", md: "30%" }} 
+          mb={{ base: 12, md: 0 }} 
+          mt={{ base: 30, md: 0}}>
           <Image src={image} size="50%" rounded="1rem"  />
         </Box>
       </Flex>

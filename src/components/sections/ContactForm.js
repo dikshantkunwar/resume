@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+
 import
 {
   Flex,
@@ -10,19 +12,28 @@ import
   Button
 } from '@chakra-ui/react' 
 
-export default function ContactForm() {
+const 
+  SERVICE_ID = process.env.REACT_APP_SERVICE_ID,
+  TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID,
+  USER_ID = process.env.REACT_APP_USER_ID;
 
-  const [contactName, setcontactName] = useState('');
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+export default function ContactForm() {
+  const form = useRef();
 
   const handleSubmit = event =>{
     event.preventDefault();
-    console.log(`name: ${contactName}, email: ${email}, message: ${message}`);
-    //TODO where does this message go
-    setcontactName('');
-    setEmail('')
-    setMessage('')
+    emailjs.sendForm(
+      SERVICE_ID, 
+      TEMPLATE_ID, 
+      form.current, 
+      USER_ID)
+    .then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+
+    document.getElementById("contactForm").reset();
   }
 
   return (
@@ -32,27 +43,29 @@ export default function ContactForm() {
           <Heading>Contact me</Heading>
         </Box>
         <Box my={4} textAlign="left">
-          <form onSubmit={handleSubmit}>
+          <form id="contactForm" ref={form} onSubmit={handleSubmit}>
             <FormControl>
               <FormLabel>Name</FormLabel>
               <Input 
                 type="name" 
+                name="user_name"
                 placeholder='Your name' 
-                onChange={event => setcontactName(event.currentTarget.value)}/>
+                />
             </FormControl>
             <FormControl>
               <FormLabel>Email</FormLabel>
               <Input 
                 type="email" 
+                name="user_email"
                 placeholder='example@email.com'
-                onChange={event => setEmail(event.currentTarget.value)} />
+                />
             </FormControl>
             <FormControl>
               <FormLabel>Message</FormLabel>
               <Input 
-                type="message" 
+                name="message"
                 placeholder='Your message here' 
-                onChange={event => setMessage(event.currentTarget.value)}/>
+                />
             </FormControl>
             <Button width="full" mt={4} type="submit" variantcolor="teal">Submit</Button>
           </form>

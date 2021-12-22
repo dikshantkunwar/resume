@@ -1,4 +1,4 @@
-import { Heading, Stack, Image, LinkOverlay, LinkBox, Text } from '@chakra-ui/react'
+import { Heading, Stack, Image, LinkOverlay, LinkBox, Text, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 import PropTypes from "prop-types"
 // import { IoLogoGithub } from 'react-icons/io5'
@@ -19,10 +19,10 @@ export default function Project({
       boxShadow="lg"
       p={5}
       m={3}
-      bg="#fbe8fd"
+      bg={useColorModeValue('#fbe8fd', '#311734')}
       {...rest} 
       >
-        <LinkBox cursor="pointer">
+        <LinkBox cursor="pointer" minH="160px">
           <Image src={image} alt={title} maxH={60} maxW={60}/>
           <LinkOverlay href={gitlink} target="_blank">
             <Heading 
