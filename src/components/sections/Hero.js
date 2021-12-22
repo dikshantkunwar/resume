@@ -15,6 +15,7 @@ export default function Hero({
   title,
   subtitle,
   image,
+  darkimage,
   ...rest
 }) {
   return (
@@ -57,11 +58,11 @@ export default function Hero({
             <SocialLinks />
         </Stack>
         <Box 
-          bg={useColorModeValue('none', 'beige')}
+          // bg={useColorModeValue('none', 'beige')}
           w={{ base: "30%", sm: "30%", md: "30%" }} 
           mb={{ base: 12, md: 0 }} 
           mt={{ base: 30, md: 0}}>
-          <Image src={image} size="50%" rounded="1rem"  />
+          <Image src={useColorModeValue(image, darkimage)} size="50%" rounded="1rem"  />
         </Box>
       </Flex>
   )
@@ -71,6 +72,7 @@ Hero.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   image: PropTypes.string,
+  darkimage: PropTypes.string
 }
  
 Hero.defaultProps = {

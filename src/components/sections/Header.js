@@ -6,15 +6,15 @@ import {
   useColorModeValue,
   Flex,
   Heading, 
-  Menu,
-  MenuButton,
-  MenuList,
+ // Menu,
+ // MenuButton,
+ // MenuList,
   IconButton,
   useColorMode,
   Text,
 } from '@chakra-ui/react'
 
-import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import PropTypes from "prop-types";
 
 const MenuItems = (props) => {
@@ -78,7 +78,7 @@ export default function Header(){
               onClick={toggleColorMode}
              ></IconButton>
 
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+          {/* <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
               as={IconButton}
@@ -87,10 +87,9 @@ export default function Header(){
               aria-label="Options"
               />
               <MenuList>
-                {/* Add menu links here ... */}
               </MenuList>
             </Menu>
-          </Box>
+          </Box> */}
         </Container>
     </Box>
   )
