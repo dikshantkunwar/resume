@@ -1,26 +1,27 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.a5c7cb14.chunk.css",
-    "main.js": "/resume/static/js/main.e4254cb6.chunk.js",
-    "main.js.map": "/resume/static/js/main.e4254cb6.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.2949f127.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.2949f127.js.map",
-    "static/js/2.83fac782.chunk.js": "/resume/static/js/2.83fac782.chunk.js",
-    "static/js/2.83fac782.chunk.js.map": "/resume/static/js/2.83fac782.chunk.js.map",
-    "static/js/3.1cdc00d5.chunk.js": "/resume/static/js/3.1cdc00d5.chunk.js",
-    "static/js/3.1cdc00d5.chunk.js.map": "/resume/static/js/3.1cdc00d5.chunk.js.map",
+    "main.js": "/resume/static/js/main.d78a9208.chunk.js",
+    "main.js.map": "/resume/static/js/main.d78a9208.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.a5a82e3d.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.a5a82e3d.js.map",
+    "static/js/2.33f41137.chunk.js": "/resume/static/js/2.33f41137.chunk.js",
+    "static/js/2.33f41137.chunk.js.map": "/resume/static/js/2.33f41137.chunk.js.map",
+    "static/js/3.c4e49f2e.chunk.js": "/resume/static/js/3.c4e49f2e.chunk.js",
+    "static/js/3.c4e49f2e.chunk.js.map": "/resume/static/js/3.c4e49f2e.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/main.a5c7cb14.chunk.css.map": "/resume/static/css/main.a5c7cb14.chunk.css.map",
-    "static/js/2.83fac782.chunk.js.LICENSE.txt": "/resume/static/js/2.83fac782.chunk.js.LICENSE.txt",
+    "static/js/2.33f41137.chunk.js.LICENSE.txt": "/resume/static/js/2.33f41137.chunk.js.LICENSE.txt",
+    "static/media/03-modified.01c0dba2.png": "/resume/static/media/03-modified.01c0dba2.png",
     "static/media/03.930c6e19.png": "/resume/static/media/03.930c6e19.png",
     "static/media/lotide.5119b2eb.jpg": "/resume/static/media/lotide.5119b2eb.jpg",
     "static/media/scheduler.b13dbf01.jpg": "/resume/static/media/scheduler.b13dbf01.jpg",
     "static/media/tweeter.f39bd4b4.jpg": "/resume/static/media/tweeter.f39bd4b4.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2949f127.js",
-    "static/js/2.83fac782.chunk.js",
+    "static/js/runtime-main.a5a82e3d.js",
+    "static/js/2.33f41137.chunk.js",
     "static/css/main.a5c7cb14.chunk.css",
-    "static/js/main.e4254cb6.chunk.js"
+    "static/js/main.d78a9208.chunk.js"
   ]
 }
