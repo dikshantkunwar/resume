@@ -31,7 +31,7 @@ export default function ProjectList() {
         />
         <Project 
         title="Scheduler"
-        description="Schedule appointments (WIP 🔨)"
+        description="Schedule appointments"
         gitlink = "https://github.com/dikshantkunwar/scheduler"
         livepage = ""
         image = {schedulerThumb}
