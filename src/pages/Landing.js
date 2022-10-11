@@ -6,8 +6,6 @@ import Footer from '../components/sections/Footer'
 import absurdImg from '../03.png'
 import invertedabsurdImg from '../03-modified.png'
 import ProjectList from '../components/sections/ProjectList';
-import { Route, Routes } from 'react-router-dom';
-import Example from './Example';
 
 export default function Landing() {
   return (
@@ -21,9 +19,6 @@ export default function Landing() {
         mt={12}
         />
         <ProjectList />
-        <Routes>
-          <Route path="example" element={<Example />} ></Route>
-        </Routes>
         <ContactForm />
         <Footer />
     </LandingLayout>
